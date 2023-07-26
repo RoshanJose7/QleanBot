@@ -1,4 +1,4 @@
-# chat_bot
+# QleanBot
 Meet our Deep Learning Chatbot: QleanBot! This intelligent bot excels at cleaning user questions using advanced processes like stemming. Trained from the intents JSON file, it's a breeze to add new data and train it for answering similar questions. Experience the power of seamless, accurate responses with our smart QleanBot! 🤖💬 #DeepLearning
 
 # Required libraries
