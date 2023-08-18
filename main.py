@@ -97,9 +97,9 @@ try:
     open("model.tflearn.index", 'r')
     model.load("model.tflearn")
 
-except:
+except FileNotFoundError:
     # If not train again
-    model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
+    model.fit(training, output, n_epoch=2000, batch_size=8, show_metric=True)
     model.save("model.tflearn")
 
 
@@ -119,6 +119,7 @@ def bag_of_words(s, words):
 
 
 def chat():
+    global responses
     print("Start talking with the bot!")
     print("Type 'quit' to stop!")
 
@@ -134,7 +135,7 @@ def chat():
         tag = labels[results_index]
 
         # Get random response from responses array
-        if results[results_index] > 0.6:
+        if results[results_index] > 0.7:
             # Print response only if accuracy greater than 70%
             for tg in data["intents"]:
                 if tg["tag"] == tag:

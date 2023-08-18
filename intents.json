@@ -21,7 +21,9 @@
     {
       "tag": "goodbye",
       "patterns": [
+        "bye",
         "cya",
+        "see ya",
         "See you later",
         "Goodbye",
         "I am Leaving",
@@ -39,15 +41,15 @@
         "how old are you",
         "age?"
       ],
-      "responses": ["I am a year old!", "1 years young!"],
+      "responses": ["I am a year old!", "2 years young :)"],
       "context_set": ""
     },
     {
       "tag": "name",
       "patterns": [
-        "what is your name",
-        "what should I call you",
-        "whats your name?"
+        "I call you",
+        "your name",
+        "name yourself"
       ],
       "responses": [
         "You can call me Jarves.",
@@ -59,9 +61,10 @@
     {
       "tag": "shop",
       "patterns": [
-        "Id like to buy something",
+        "like to buy",
         "whats on the menu",
-        "what do you reccommend?",
+        "want to buy",
+        "what do you recommend?",
         "could i get something to eat"
       ],
       "responses": [
@@ -75,6 +78,7 @@
       "patterns": [
         "when are you guys open",
         "what are your hours",
+        "working hours",
         "hours of operation"
       ],
       "responses": ["We are open 7am-4pm Monday-Friday!"],
