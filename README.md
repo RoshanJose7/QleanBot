@@ -3,7 +3,7 @@ Meet our Deep Learning Chatbot: QleanBot! This intelligent bot excels at cleanin
 
 # Required libraries
 Make sure to run this command to install all the dependencies before training
-```pip install nltk numpy tflearn tensorflow random json pickle```
+```pip install -r requirements.txt```
 
 # Training & Testing
 - To add new data sets, open the `intents.json` file and follow the same format while adding it.
